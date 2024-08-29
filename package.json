@@ -7,7 +7,7 @@
     "check": "tsc --noEmit --emitDeclarationOnly false",
     "docs": "documentation build lib/Logger.js lib/*.js --shallow -o docs -f html && documentation build lib/MediaServer.js lib/*.js --shallow -o api.md -f md --markdown-toc false",
     "dist": "mkdir -p dist && tar cvzf dist/medooze-logger-`node -e 'console.log(require(\"./package.json\").version)'`.tgz `([ \"$(uname)\" = 'Darwin' ] && echo \"-s |^|medooze-logger/|\") || echo \" --transform=flags=r;s|^|medooze-logger/|\"` package.json index.js index.d.ts build/types README.md lib/*",
-    "test": "tap tests/*.js --cov --no-check-coverage"
+    "test": "tap tests/*.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
     "index.d.ts",
     "build/types",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "tap": "^21.0.1"
+  }
 }

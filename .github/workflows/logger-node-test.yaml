@@ -1,0 +1,21 @@
+name: logger-node-test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: 'recursive'
+    - name: Initialize submodules
+      run: git submodule update --init --recursive
+    - name: Install and build
+      run: npm i
+    - name: Run Test
+      run: npm test
