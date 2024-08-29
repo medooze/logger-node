@@ -1,0 +1,19 @@
+{
+  "name": "medooze-logger",
+  "version": "1.0.0",
+  "description": "Logger by Medooze",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap tests/*.js --cov --no-check-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medooze/logger-node.git"
+  },
+  "author": "Sergio Garcia Murillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medooze/logger-node/issues"
+  },
+  "homepage": "https://github.com/medooze/logger-node#readme"
+}
