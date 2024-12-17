@@ -1,5 +1,5 @@
 {
-  "name": "medooze-logger",
+  "name": "@medooze/logger",
   "version": "1.2.0",
   "description": "Logger by Medooze",
   "main": "index.js",
